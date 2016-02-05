@@ -65,4 +65,4 @@ if BirthMonth == "October" and BirthDay == 31:
 elif BirthMonth == TodayMonth and BirthDay == TodayDate:
     print("Happy birthday!")
 else:
-    print(Name+", you are a "+Season+" birthday of the "+Era+".")
+    print(Name+", you are a "+Season+" baby of the "+Era+".")
