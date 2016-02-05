@@ -50,10 +50,19 @@ elif BirthMonth == "June" or BirthMonth == "July" or BirthMonth == "August":
     Season = "summer"
 else:
     Season = "fall"
+    
+if BirthYear >= 2000:
+    Era = "two thousands"
+elif BirthYear >= 1990 and BirthYear < 2000:
+    Era = "nineties"
+elif BirthYear >= 1980 and BirthYear < 1990:
+    Era = "eighties"
+else:
+    Era = "Stone Age"
 
 if BirthMonth == "October" and BirthDay == 31:
     print("You were born on Halloween!")
 elif BirthMonth == TodayMonth and BirthDay == TodayDate:
     print("Happy Birthday!")
 else:
-    print(Name+", You are a "+Season+" birthday of the")
+    print(Name+", you are a "+Season+" birthday of the "+Era+".")
