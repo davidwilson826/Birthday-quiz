@@ -42,8 +42,18 @@ BirthMonth = input("Hi "+Name+", what was the name of the month you were born in
 BirthYear = input("And what year were you born in, "+Name+"? ")
 BirthDay = int(input("And the day? "))
 
+if BirthMonth == "December" or BirthMonth == "January" or BirthMonth == "February":
+    Season = "winter"
+elif BirthMonth == "March" or BirthMonth == "April" or BirthMonth == "May":
+    Season = "spring"
+elif BirthMonth == "June" or BirthMonth == "July" or BirthMonth == "August":
+    Season = "summer"
+else:
+    Season = "fall"
+
 if BirthMonth == "October" and BirthDay == 31:
     print("You were born on Halloween!")
-    
-if BirthMonth == TodayMonth and BirthDay == TodayDate:
+elif BirthMonth == TodayMonth and BirthDay == TodayDate:
     print("Happy Birthday!")
+else:
+    print(Name+", You are a "+Season+" birthday of the")
