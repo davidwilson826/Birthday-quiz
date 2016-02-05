@@ -34,11 +34,8 @@ Example Session
 
 from datetime import datetime
 from calendar import month_name
-TodayMonth = datetime.today().month
+TodayMonth = month_name[datetime.today().month]
 TodayDate = datetime.today().day
-
-# BirthMonth = "October"
-# BirthDay = 31
 
 Name = input("Hello, what is your name? ")
 BirthMonth = input("Hi "+Name+", what was the name of the month you were born in? ")
