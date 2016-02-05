@@ -42,7 +42,8 @@ BirthMonth = input("Hi "+Name+", what was the name of the month you were born in
 BirthYear = input("And what year were you born in, "+Name+"? ")
 BirthDay = input("And the day? ")
 
-Halloween = "You were born on Halloween!"
-
-if BirthMonth == October and BirthDay == 31
-    print(Halloween)
+if BirthMonth == October and BirthDay == 31:
+    print("You were born on Halloween!")
+    
+if BirthMonth == TodayMonth and TodayDate == 31:
+    print("Happy Birthday!")
