@@ -1,7 +1,7 @@
 """
 birthday.py
-Author: <your name here>
-Credit: <list sources used, if any>
+Author: David Wilson
+Credit: None
 Assignment:
 
 Your program will ask the user the following questions, in this order:
@@ -39,7 +39,7 @@ TodayDate = datetime.today().day
 
 Name = input("Hello, what is your name? ")
 BirthMonth = input("Hi "+Name+", what was the name of the month you were born in? ")
-BirthYear = input("And what year were you born in, "+Name+"? ")
+BirthYear = int(input("And what year were you born in, "+Name+"? "))
 BirthDay = int(input("And the day? "))
 
 if BirthMonth == "December" or BirthMonth == "January" or BirthMonth == "February":
